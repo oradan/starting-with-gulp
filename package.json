@@ -18,5 +18,9 @@
   "homepage": "https://github.com/oradan/starting-with-gulp#readme",
   "dependencies": {
     "bootstrap": "^4.2.1"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
   }
 }
