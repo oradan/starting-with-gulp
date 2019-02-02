@@ -10,14 +10,14 @@ const sass        = require('gulp-sass');
 //        // .pipe(browserSync.stream());
        
 // });
-gulp.task(sassCompile)
+//gulp.task(sassCompile)
 function sassCompile(){
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
     .pipe(sass())
     .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream())
 }
-gulp.task(jsBundel)
+//gulp.task(jsBundel)
 function jsBundel(){
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
            .pipe(gulp.dest("src/js"))
