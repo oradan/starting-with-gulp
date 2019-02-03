@@ -1,5 +1,35 @@
-$bg-color: rgb(177, 144, 144); 
+$bg-color: rgb(155, 19, 19); 
 
-body {
-    background: $bg-color;
+.flex-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.flex-div div{
+    width: 50%;
+    display: block;
+    flex: 1;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: 0;
+    border: 1px solid red;
+    margin: 10px
+}
+
+h1{color: red}
+
+.rc-layout-container{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.rc-column{
+    display:inline-flex;
+    flex: 1;
+    position: relative;
+    border: 1px solid red;
 }
